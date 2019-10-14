@@ -10,14 +10,18 @@
       <li class="nav-item active">
         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
       </li>
+
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Expediente
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Paciente</a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Expediente</a>
+        <div class="dropdown-menu" x-placement="bottom-start"
+          style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+
+          <a class="dropdown-item" routerLink="/expedientes" routerLinkActive="active">Pacientes</a>
           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/ordenescredito" routerLinkActive="active">Credito</a>
+          <a class="dropdown-item" routerLink="/ordenescontado" routerLinkActive="active">Contado</a>
+
         </div>
       </li>
     </ul>
